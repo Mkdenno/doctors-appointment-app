@@ -24,6 +24,8 @@ class AppointmentsController < ApplicationController
 
     end
 
+
+
     private
     def appointments_params
         params.permit(:username, :email, :user_id, :doctor_id, :status)

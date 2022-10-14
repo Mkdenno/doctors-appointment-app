@@ -9,14 +9,17 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
 
+
 # Doctors routes
 get '/docs', to: 'doctors#index'
+# resources :doctors
 
 # Appointment routes
 get '/appointments', to: 'appointments#index'
 
 post '/appointments', to: 'appointments#create'
 patch '/appointments', to: 'appointments#update'
+# delete '/appointments', to: 'appointments#destroy'
 
 
   resources :appointments
@@ -31,5 +34,7 @@ patch '/appointments', to: 'appointments#update'
   get '/mea', to: 'admins#show'
   post '/logina', to: 'admin_sessions#create'
   delete '/logouta', to: 'admin_sessions#destroy'
+#   delete '/delete', to: 'doctors#destroy'
+
 
 end

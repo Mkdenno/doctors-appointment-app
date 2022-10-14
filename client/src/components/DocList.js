@@ -9,17 +9,22 @@ const DocList = ({
   location,
   userid,
 }) => {
-
   const [isClicked, setIsClicked] = useState(false);
   const [appointmentData, setAppointmentData] = useState([]);
   const [appointmentStatus, setAppointmentStatus] = useState("book");
-
 
   useEffect(() => {
     fetch("/appointments")
       .then((res) => res.json())
       .then((data) => setAppointmentData(data));
   }, []);
+
+  //console.log(appointmentData);
+
+//    appointmentData.forEach((user) => {
+
+    
+//   });
 
   
 
@@ -30,23 +35,19 @@ const DocList = ({
     doctor_id: docid,
     status: false,
   };
-  // console.log(appData);
 
   const handlesubmit = () => {
-    
     if (!isClicked) {
-      setAppointmentStatus("booked")
-        fetch("/appointments", {
-          method: "POST",
-          headers: {
-            "content-Type": "application/json",
-          },
-          body: JSON.stringify(appData),
-        });
-      
+      setAppointmentStatus("booked");
+      fetch("/appointments", {
+        method: "POST",
+        headers: {
+          "content-Type": "application/json",
+        },
+        body: JSON.stringify(appData),
+      });
     }
   };
-
 
   return (
     <div>
@@ -78,7 +79,7 @@ const DocList = ({
              appointmentData.status == true? "booked"  : appointmentStatus
             }
           </button>
-            <p>{ !isClicked? "": "pending" }</p>
+          <p>{!isClicked ? "" : "pending"}</p>
         </div>
       </div>
     </div>

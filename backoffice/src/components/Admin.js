@@ -9,6 +9,7 @@ const Admin = ({appointment}) => {
       ));
   return (
     <div>
+      <h1 className='totalAppointments'>Total number of appointments[<span className='totalcolor'>{appointment.length}</span>]</h1>
         <table>
             <thead>
             <tr>

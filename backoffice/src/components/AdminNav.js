@@ -24,6 +24,11 @@ const AdminNav = ({admin,setAdmin}) => {
                     <span className="text-red-500">Home</span>
                   </Link>
                 </button>
+                <button className="bg-blue-600 text-gray-200  p-2 rounded  hover:bg-blue-500 hover:text-gray-100">
+                <Link to="/adddoc">
+                    <span className="text-red-500">Add Doctor</span>
+                  </Link>
+                </button>
                 <div className="auth flex items-center w-full md:w-full">
                 {/* <button className="bg-transparent text-gray-800  p-2 rounded border border-gray-300 mr-4 hover:bg-gray-100 hover:text-gray-700"><Link to="/register">Sign in</Link></button> */}
                 <button className="bg-blue-600 text-gray-200  p-2 rounded  hover:bg-blue-500 hover:text-gray-100">

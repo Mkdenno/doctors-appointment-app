@@ -12,4 +12,10 @@ class DoctorsController < ApplicationController
             render json: { error: "Not authorized" }, status: :unauthorized
         end
     end
+
+    def destroy
+        user = User.find_by(id: params[:id])
+        user.destroy
+        head :no_content
+    end
 end

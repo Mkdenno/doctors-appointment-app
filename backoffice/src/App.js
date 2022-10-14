@@ -3,6 +3,7 @@ import AdminNav from "./components/AdminNav";
 import { Route, Routes } from "react-router-dom";
 import AdminLogin from "./components/AdminLogin";
 import Admin from "./components/Admin";
+import AddDoc from "./components/AddDoc";
 
 function App() {
   const [appointment, setAppointment] = useState([]);
@@ -34,20 +35,26 @@ function App() {
   return (
     <div className="App">
       <AdminNav admin={admin} setAdmin={setAdmin} />
-      <Routes>
+      {/* <Routes> */}
         {
           admin ? (
-            <Route path="/" element={<Admin appointment={appointment} />} />
+            <Routes>
+                          <Route path="/" element={<Admin appointment={appointment} />} />
+                          <Route path="/adddoc" element={<AddDoc appointment={appointment} />} />
+
+            </Routes>
 
           )
           :
           (
-            <Route path="/adminlogin" element={<AdminLogin  setAdmin={setAdmin}/>} />
+            <Routes>
+                          <Route path="/adminlogin" element={<AdminLogin  setAdmin={setAdmin}/>} />
+            </Routes>
 
           )
 
         }
-      </Routes>
+      {/* </Routes> */}
     </div>
   );
 }
