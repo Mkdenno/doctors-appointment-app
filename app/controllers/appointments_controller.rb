@@ -14,19 +14,19 @@ class AppointmentsController < ApplicationController
         
         if appoint
 
-#         appoint.update(appointments_params)
+        appoint.update(appointments_params)
 
-#         render json:appoint
+        render json:appoint
 
-#         else
-#             render json: { error: "not found" }, status: :not_found
-#         end
+        else
+            render json: { error: "not found" }, status: :not_found
+        end
 
-#     end
+    end
 
-#     private
-#     def appointments_params
-#         params.permit(:username, :email, :user_id, :doctor_id, :status)
-#     end
+    private
+    def appointments_params
+        params.permit(:username, :email, :user_id, :doctor_id, :status)
+    end
 
-# end
+end
