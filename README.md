@@ -1,4 +1,4 @@
-<!-- # EMERGENCY APPLICATION
+# EMERGENCY APPLICATION
 ## Project Description
 My application is a web based application that connects patients who are diabetic.
 Where patients books an appointment to a specific doctor.
@@ -7,7 +7,7 @@ Where patients books an appointment to a specific doctor.
 ## ScreenShot
 
 
-
+<!-- 
 ## Technologies Used
  
  -CSS- which was used to style the user interface.
