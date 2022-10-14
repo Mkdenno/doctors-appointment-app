@@ -1,18 +1,18 @@
-# class AppointmentsController < ApplicationController
-#     def index
-#         appoint=Appointment.all
-#         render json: appoint, status: :ok
-#     end
+class AppointmentsController < ApplicationController
+    def index
+        appoint=Appointment.all
+        render json: appoint, status: :ok
+    end
 
-#     def create
-#         appoint=Appointment.create(appointments_params)
-#         render json: appoint, status: :created
-#     end
+    def create
+        appoint=Appointment.create(appointments_params)
+        render json: appoint, status: :created
+    end
 
-#     def update 
-#         appoint=Appointment.find_by(id: params[:id])
+    def update 
+        appoint=Appointment.find_by(id: params[:id])
         
-#         if appoint
+        if appoint
 
 #         appoint.update(appointments_params)
 
