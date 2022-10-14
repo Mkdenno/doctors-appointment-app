@@ -13,20 +13,20 @@ class AdminsController < ApplicationController
     #     render json: user
     # end
 
-#     def create
-#         admin = Admin.create(signup_params)
-#         if admin.valid?
-#             session[:admin_id] = admin.id
-#             render json: admin, status: :created
-#         else
-#             render json: { errors: admin.errors.full_messages }, status: :unprocessable_entity
+    def create
+        admin = Admin.create(signup_params)
+        if admin.valid?
+            session[:admin_id] = admin.id
+            render json: admin, status: :created
+        else
+            render json: { errors: admin.errors.full_messages }, status: :unprocessable_entity
         
-#         end
+        end
 
-#     end
+    end
 
-#     private
-#     def signup_params
-#         params.permit(:email, :password, :password_confirmation)
-#     end
-# end
+    private
+    def signup_params
+        params.permit(:email, :password, :password_confirmation)
+    end
+end
