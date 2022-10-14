@@ -1,17 +1,17 @@
-# class AdminsController < ApplicationController
-#     def show
-#         admin = Admin.find_by(id: session[:admin_id])
-#         if admin
-#         render json: admin
-#         else
-#             render json: { error: "Not authorized" }, status: :unauthorized
-#         end
-#     end
+class AdminsController < ApplicationController
+    def show
+        admin = Admin.find_by(id: session[:admin_id])
+        if admin
+        render json: admin
+        else
+            render json: { error: "Not authorized" }, status: :unauthorized
+        end
+    end
 
-#     # def index
-#     #     user= User.all
-#     #     render json: user
-#     # end
+    # def index
+    #     user= User.all
+    #     render json: user
+    # end
 
 #     def create
 #         admin = Admin.create(signup_params)
