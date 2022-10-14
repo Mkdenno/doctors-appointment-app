@@ -9,19 +9,19 @@ const Doctors = ({user}) => {
         .then((data)=>setDoctor(data))
 
     },[])
-    // const displayDoc=doctor.map((doc)=>(
-    //  <DocList
-    //  key={doc.id}
-    //  username={doc.username}
-    //  email={doc.email}
-    //  description={doc.description}
-    //  location={doc.location}
-    //  userid={user.id}
-    //  useremail={user.email}
-    //  docid={doc.id}
-    //  />
+    const displayDoc=doctor.map((doc)=>(
+     <DocList
+     key={doc.id}
+     username={doc.username}
+     email={doc.email}
+     description={doc.description}
+     location={doc.location}
+     userid={user.id}
+     useremail={user.email}
+     docid={doc.id}
+     />
 
-    // ))
+    ))
   return (
     <div>
         {displayDoc}
