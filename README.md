@@ -6,6 +6,8 @@ Where patients books an appointment to a specific doctor.
 
 ## ScreenShot
 ![Screenshot from 2022-10-14 14-49-42](https://user-images.githubusercontent.com/104482846/195840111-8fddacf4-e48f-409f-80d2-e946a3c8f672.png)
+![Screenshot from 2022-10-14 15-01-22](https://user-images.githubusercontent.com/104482846/195842181-d840ddf0-7fb0-4b8f-8392-1a05500b6932.png)
+
 
 
 
