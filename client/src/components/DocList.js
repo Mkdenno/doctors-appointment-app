@@ -1,25 +1,25 @@
-// import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
-// const DocList = ({
-//   docid,
-//   useremail,
-//   username,
-//   email,
-//   description,
-//   location,
-//   userid,
-// }) => {
+const DocList = ({
+  docid,
+  useremail,
+  username,
+  email,
+  description,
+  location,
+  userid,
+}) => {
 
-//   const [isClicked, setIsClicked] = useState(false);
-//   const [appointmentData, setAppointmentData] = useState([]);
-//   const [appointmentStatus, setAppointmentStatus] = useState("book");
+  const [isClicked, setIsClicked] = useState(false);
+  const [appointmentData, setAppointmentData] = useState([]);
+  const [appointmentStatus, setAppointmentStatus] = useState("book");
 
 
-//   useEffect(() => {
-//     fetch("/appointments")
-//       .then((res) => res.json())
-//       .then((data) => setAppointmentData(data));
-//   }, []);
+  useEffect(() => {
+    fetch("/appointments")
+      .then((res) => res.json())
+      .then((data) => setAppointmentData(data));
+  }, []);
 
   
 
