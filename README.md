@@ -21,7 +21,7 @@ enables the user to run the program with less hassle.
 
  
 
-<!-- 
+
 
 ## Installation Process
 -Clone to this repo : git clone (https://github.com/Mkdenno/doctors-appointment-app)
@@ -31,7 +31,7 @@ enables the user to run the program with less hassle.
 -Open the index file from the zipped file with any browser.
 
 
-
+<!-- 
 
 ## Live Link
 
