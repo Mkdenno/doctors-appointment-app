@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.username{
+    color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.description{
+    margin-top: 5rem;
+    width: 30%;
+}
+.description h1{
+    font-size: 3.5rem;
+    color: white;
+}
+.description p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.images{
+    margin-top: 5rem;
+
+    display: flex;
+    /* grid-template-columns: auto auto;
+    gap: 50px 100px; */
+}

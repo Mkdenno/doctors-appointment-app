@@ -1,0 +1,36 @@
+.actProvide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+.actProvide h1{
+    font-size: 3rem;
+}
+.activities{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+
+
+}
+.activityImg{
+    display: inline-grid;
+    grid-template-columns: auto auto ;
+
+
+
+}
+.activitidescription{
+    width: 30%;
+}
+.activitidescription ul li{
+    font-size: 3rem;
+}
+.activitidescription ul li:hover{
+    background-color: rgb(37 99 235 );
+    border-radius: 1rem;
+}

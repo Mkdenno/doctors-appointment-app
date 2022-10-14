@@ -1,0 +1,34 @@
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    height: 14rem;
+    border: 1px solid black;
+    margin-top:4rem ;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+}
+.data{
+    margin: 3rem;
+}
+.data h1{
+    font-size: 2rem;
+    font-weight: 800;
+
+}
+.data .name{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.data .abouts{
+    font-size: 1rem;
+    font-weight: 800;
+}

@@ -1,0 +1,14 @@
+.diabeticAbout{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+
+}
+.aboutD{
+    width: 30%;
+
+}
+.aboutD h1{
+font-size: 2rem;
+}

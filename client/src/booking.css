@@ -1,0 +1,15 @@
+.booking{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 30%;
+    margin:auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 3rem;
+    background-color: #e2e8f0;
+}
+.desc h1{
+    font-size: 3rem;
+}
