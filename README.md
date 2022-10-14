@@ -7,7 +7,7 @@ Where patients books an appointment to a specific doctor.
 ## ScreenShot
 
 
-<!-- 
+
 ## Technologies Used
  
  -CSS- which was used to style the user interface.
@@ -21,7 +21,7 @@ enables the user to run the program with less hassle.
 
  
 
-
+<!-- 
 
 ## Installation Process
 -Clone to this repo : git clone (https://github.com/Mkdenno/doctors-appointment-app)
