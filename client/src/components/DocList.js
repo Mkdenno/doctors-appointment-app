@@ -23,29 +23,29 @@ const DocList = ({
 
   
 
-//   const appData = {
-//     username: username,
-//     email: useremail,
-//     user_id: userid,
-//     doctor_id: docid,
-//     status: false,
-//   };
-//   // console.log(appData);
+  const appData = {
+    username: username,
+    email: useremail,
+    user_id: userid,
+    doctor_id: docid,
+    status: false,
+  };
+  // console.log(appData);
 
-//   const handlesubmit = () => {
+  const handlesubmit = () => {
     
-//     if (!isClicked) {
-//       setAppointmentStatus("booked")
-//         fetch("/appointments", {
-//           method: "POST",
-//           headers: {
-//             "content-Type": "application/json",
-//           },
-//           body: JSON.stringify(appData),
-//         });
+    if (!isClicked) {
+      setAppointmentStatus("booked")
+        fetch("/appointments", {
+          method: "POST",
+          headers: {
+            "content-Type": "application/json",
+          },
+          body: JSON.stringify(appData),
+        });
       
-//     }
-//   };
+    }
+  };
 
 
   return (
